@@ -2,14 +2,17 @@
 *todo* is a simple tasklist manager in python with support for an openbox pipemenu to edit and view your tasklist at anytime. It is rather feature-sparse, only providing a way to simply track and manage items, without priorities or deadlines (which will perhaps be implemented in future versions)
 
 ## Openbox
-Put an entry in ~/.config/openbox/menu.xml, making sure to adjust for the proper path to this script:
+Put an entry in `~/.config/openbox/menu.xml`, making sure to adjust for the proper path to this script:
+
 `<menu id="pipe-tasklist" label="Task List" execute="python /path/to/todo.py*8 menu" />`
 
 Then put the following wherever you'd like it to be displayed in your menu:
+
 `<menu id="pipe-tasklist" />`
 
 ## Conky
 You can easily add this script to your conky configurations with the following line:
+
 `${head /path/to/list 30 20}`
 
 This will append all of the items in the todo file directly to your conky
